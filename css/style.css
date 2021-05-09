@@ -1,0 +1,76 @@
+body{
+    background-color: lightblue;
+}
+.ui.table thead th{
+    text-align: center;
+    font-family: Trebuchet, sans-serif;
+    padding-top: 2%;
+    margin: 30px;
+    color: rgb(255, 255, 255);
+}
+  .ui.table, tbody, tr, td{
+    text-align: center;
+    font-family: Trebuchet, sans-serif;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 30px;
+    color: rgb(102, 102, 102);
+  }
+  .ui.cards {
+    padding-left:2.5%;
+    padding-top:2.5%;
+    padding-bottom:2.5%;
+  }
+footer{
+    background-position: left;
+    background-color: rgb(48, 48, 48);
+}
+#indexTitle{
+  padding: 5%;
+  text-align: center;
+  background-image: url("/images/Scoutbanner.jpg");
+  height: 100px;
+  background-repeat: no-repeat
+}
+form#contact label {  
+  font-weight: bold;  
+  font-size: small;  
+  color: blue;  
+  line-height: 150%;
+}
+#Description{
+  font-family: monospace, 'Courier New';
+}
+#contact input:valid {
+  color: green;
+}
+/* Unmatched */
+#contact input:invalid {
+  color: red;
+  border-color:red;
+}
+#contact input[type=submit] {
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bottomcentered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  font-family: monospace, 'Courier New';
+  transform: translate(-50%, -50%);
+}
+.Scouts {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  text-align: center;
+  font-family: monospace, 'Courier New';
+  transform: translate(-50%, -50%);
+}

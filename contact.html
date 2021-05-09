@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Scouting Ireland</title>
+    <style>
+        #information {
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="ui inverted segment">
+            <div class="ui inverted secondary pointing menu">
+                <a class="item" href="index.html">
+                    HOME
+                </a>
+                <a class="item" href="about.html">
+                    Who Are We?
+                </a>
+                <div class="right menu">
+                    <a class="active item" href="contact.html">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <img src="/images/Header.PNG" alt="Mountain">
+            <div class="centered">
+                <h1>How to Contact Us</h1>
+            </div>
+            <div class="Scouts">
+                <p>1st Meath Navan Scouts</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="information" class="thirteen wide column">
+        <p>If you need to get in touch urgently, please call one of our Scout Leaders on 01793
+            641207. For anything else, please <a href="mailto:1stMeath@Scouting.com"> CONTACT </a> our scouting group
+            through email.</p>
+
+        <form action="process.html" method="get" id="contact" class="ui form" role="form">
+
+            <!-- Add form inputs here -->
+            <div class="inline field">
+                <label for="contactname" class="two wide field">Contact Name</label>
+                <input title="Please enter a vaild Contact Name" type="text" name="contactname" id="contactname"
+                    class="eight wide field" required autofocus pattern="[A-Z][a-z]+( [A-Z][a-z]+)*">
+                <br>
+            </div>
+            <div class="inline field">
+                <label for="quantity" class="two wide field">Telephone Number</label>
+                <input title="Please enter a vaild Telephone Number" type="tel" name="quantity" id="quantity"
+                    class="eight wide field" required pattern="^(\(\d{3}\)|\d{3})-?\d{6,9}$">
+                <br>
+            </div>
+            <div class="inline field">
+                <label for="email" class="two wide field">Email Address</label>
+                <input title="Please enter a vaild Email Address" type="email" name="email" id="email"
+                    class="eight wide field" required
+                    pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$">
+                <br>
+            </div>
+            <div class="inline field">
+                <label for="dropdown">What section of Scouting does this concern?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="Beavers">Beavers</option>
+                    <option value="Cub Scouts">Cub Scouts</option>
+                    <option value="Scouts">Scouts</option>
+                    <option value="Venturers">Venturers</option>
+                    <option value="Rovers">Rovers</option>
+                    <option value="Leaders">Scout Leaders</option>
+                    <option value="Event">Scouting Events</option>
+                    <option value="Application">Application to Scouting Ireland</option>
+                </select>
+            </div>
+            <p>
+                Please provide any other details you think will be useful to us in the text area below (It<br>
+                may save us calling or emailing you, and help avoid delays)</p>
+            <textarea id="comments" name="comments" rows="6" cols="1"></textarea>
+            <p>
+                If we need to call you back for any more info, what would be the best time to call you<br>
+                on the number supplied?</p>
+            <p>
+                <label></label><br>
+                <input style="clear:left; float:left" type="radio" name="format" id="morning" value="morning" /> <label
+                    for="morning" style="float:left"> In the morning</label><br>
+                <input style="clear:left; float:left" type="radio" name="format" id="afternoon"
+                    value="afternoon" /><label for="afternoon" style="float:left"> In the afternoon</label>
+                <input style="clear:left; float:left" type="radio" name="format" id="evening" value="evening" /> <label
+                    for="evening" style="float:left"> In the evening</label><br>
+                <input style="clear:left; float:left" type="radio" name="format" id="calls" value="calls" /> <label
+                    for="calls" style="float:left"> No calls please</label><br>
+            </p><br>
+            <p>
+                1st Meath Navan may need to share this information you give us to Scouting Ireland. Please confirm if
+                you are happy for us to do this.</p>
+            <p><br>
+                <input type="checkbox" name="use" id="use" value="event" checked="checked" style="float:left">
+                <label for="use" style="float:left">I am happy for this information to be shared</label>
+            </p>
+            <br>
+            <input style="clear:left" type="submit" class="ui button blue" value="Send Away">
+            <input style="clear:left" type="reset" class="ui button blue" value="Clear Information">
+        </form>
+
+    </main>
+    <footer>
+        <table class="ui very basic table">
+            <thead>
+                <tr>
+                    <th>Scouting Ireland Market</th>
+                    <th>Help</th>
+                    <th>Join Our Scouting Community</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Terms</td>
+                    <td>Help Center</td>
+                    <td>Community</td>
+                </tr>
+                <tr>
+                    <td>Licenses</td>
+                    <td>Support</td>
+                    <td>Blog</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Registration Refunds</td>
+                    <td>Forums</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Item Refunds</td>
+                    <td>Meetups</td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+</body>
+
+</html>
